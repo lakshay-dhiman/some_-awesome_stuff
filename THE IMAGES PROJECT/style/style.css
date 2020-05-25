@@ -394,3 +394,151 @@ form{
 #sources li{
     font-size: 20px;
 }
+
+/* trying to make responsive */
+
+@media(max-width:1500px){
+
+    #menu-elements li a{
+        margin:0px;
+    }
+
+    #nav-search-icon{
+        display: none!important;
+    }
+
+    #bs-example-navbar-collapse-1{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container-fluid{
+        padding-right: 0px;
+    }
+
+    #categories{
+        grid-column: 1/3;
+    }
+
+    #main-page{
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media(max-width:1100px){
+    #logo{
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-150px) scale(0.8);
+
+    }
+
+    #bs-example-navbar-collapse-1{
+        top: 300px;
+        text-align: center;
+    }
+
+    #menu-elements{
+        margin: 0px 100px 0px 100px;
+    }
+
+    #navigation{
+        top: 200px;
+    }
+
+    .container-fluid{
+        margin: auto !important;
+        justify-self: center;
+    }
+}
+
+@media(max-width:1100px){
+    #menu-elements li a{
+        font-size: 1.2em;
+        padding: 10px;
+        border-left: 1px rgba(197, 160, 115, 0.815) solid;
+    }
+
+    /* #menu-elements li a:first-child{
+        border-left: 0px;
+    } */
+
+    .cat-item{
+        width: 200px;
+        height: 300px;
+    }
+
+    .cat-item img{
+        transform: scale(1.3);
+    }
+}
+
+@media(max-width:950px){
+    #menu-elements{
+        margin: 0px 50px 0px 50px;
+    }
+}
+
+@media(max-width:850px){
+    #menu-elements{
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+@media(max-width:800px){
+    #main-page{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .cat-item{
+        width: 60vw;
+        height: 80vw;
+        margin:auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .cat-item img{
+        transform: scale(1);
+    }
+
+    #categories{
+        padding: 0px;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width:768px){
+    #navigation{
+        top: 50px;
+    }
+    
+    #logo{
+        position: relative;
+        top: 140px;
+
+    }
+    
+    .navbar-header{
+        position: relative;
+    }
+
+    .container-fluid{
+        padding-right: 15px;
+    }
+
+    #bs-example-navbar-collapse-1{
+        position: relative;
+    }
+
+}
