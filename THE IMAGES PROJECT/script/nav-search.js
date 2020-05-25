@@ -5,7 +5,7 @@ nav_search.addEventListener("keydown",function(){
     category=inner_text;
 
     if(event.which==13){
-        window.location.href="/home/sakujo/Work/Web Designing/The Project/per-category-page/per-category.html";
+        window.location.href="per-category.html";
         event.preventDefault();
         console.log("yes")
         category=inner_text;
