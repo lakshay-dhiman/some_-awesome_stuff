@@ -7,9 +7,9 @@ nav_search.addEventListener("keydown",function(){
     if(event.which==13){
         window.location.href="per-category.html";
         event.preventDefault();
-        console.log("yes")
         category=inner_text;
         localStorage.setItem("category",category)
     }
 
 })
+

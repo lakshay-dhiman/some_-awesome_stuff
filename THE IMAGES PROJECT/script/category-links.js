@@ -7,7 +7,6 @@ document.addEventListener("click",function(event){
     if(elem_class=="category-links"){
         category= elem_id;
         localStorage.setItem("category",category);
-        console.log(category);
     }
 
 })

@@ -12,7 +12,6 @@ fetch("https://api.unsplash.com/search/photos?query="+category+"&per_page=30&pag
     })
     .then(function(data){
         var total= data.total;
-        console.log(data)
         photo_data[1]=data;
         if(photo_data[1].total!=0){
         var heading= document.getElementById("heading")
@@ -63,7 +62,6 @@ document.addEventListener("scroll",function(){
     })
     .then(function(data){
         var total= data.total;
-        console.log(data)
         photo_data[page]=data;
     
         var i=0;

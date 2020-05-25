@@ -10,7 +10,7 @@ var elementClass= element.getAttribute("class")
 var elementID1= element.getAttribute("id1")
 var elementID2= element.getAttribute("id2")
 
-console.log(elementClass,elementID1,elementID2)
+
 
     if(elementClass=="image"){
         var overlay_url = photo_data[elementID2].results[elementID1].urls.regular;
@@ -111,7 +111,6 @@ next.addEventListener("click",function(event){
             })
             .then(function(data){
                 var total= data.total;
-                console.log(data)
                 photo_data[page]=data;
             
                 var i=0;
@@ -231,7 +230,6 @@ window.addEventListener("keydown",function(event){
             })
             .then(function(data){
                 var total= data.total;
-                console.log(data)
                 photo_data[page]=data;
             
                 var i=0;
@@ -304,4 +302,12 @@ window.addEventListener("keydown",function(event){
             prev.classList.add("invisible");
         } 
     }
+})
+
+var cross= document.getElementById("cross");
+
+cross.addEventListener("click",function(event){
+    overlay.classList.remove("overlay-visible");
+    var active_image= document.getElementsByClassName("active-image")[0];
+    active_image.setAttribute("class","image"); 
 })

@@ -461,9 +461,9 @@ form{
         border-left: 1px rgba(197, 160, 115, 0.815) solid;
     }
 
-    /* #menu-elements li a:first-child{
+    #menu-elements li a#travel{
         border-left: 0px;
-    } */
+    }
 
     .cat-item{
         width: 200px;
@@ -514,11 +514,14 @@ form{
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 40px;
+        max-width: 90%;
     }
 
 }
 
-@media(max-width:768px){
+@media(max-width:767px){
+
+
     #navigation{
         top: 30px;
     }
@@ -612,7 +615,9 @@ form{
 
 
     #main-heading{
-        margin: 10px;
+        margin: 20px 0px 20px 0px;
+        
+        width: 90vw;
     }
     
     #searchbar-main{
@@ -621,13 +626,16 @@ form{
 
     }
 
+    .navbar-collapse.collapsing{
+        display: none;
+    }
+
     #down{
         display: none;
     }
 
     #top-btn{
-        transform: scale(0.8) translateX(+50px
-        );
+        transform: scale(0.8) translateX(+50px);
     }
 
 }
