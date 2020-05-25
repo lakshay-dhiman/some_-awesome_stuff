@@ -520,25 +520,114 @@ form{
 
 @media(max-width:768px){
     #navigation{
-        top: 50px;
+        top: 30px;
     }
     
     #logo{
         position: relative;
-        top: 140px;
+        top: 120px ;
+        z-index: 100;
+        
 
+    }
+
+    #logo img{
+        border: 2px #B49167 solid;
+        transform: scale(0.8) translateY(-10px) translateX(+20px);
+        
     }
     
     .navbar-header{
         position: relative;
+        width: 100%;
     }
 
-    .container-fluid{
-        padding-right: 15px;
+    .container-fluid{ 
+        padding: 0px;
+        
+       
     }
 
     #bs-example-navbar-collapse-1{
-        position: relative;
+        /* position: relative; */
+        /* display: grid;
+        grid-template-columns: auto auto auto; */
+        transform: translateY(+20px);
+        padding:  0px;
+        border: hidden;
+        background: rgba(7, 19, 20, 0.5);
+        z-index: -1;
+        width: 100%;
+        margin: 0px!important;
+
+    }
+
+    .navbar-toggle.collapsed{
+        margin: 0px;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-3px);
+
+    }
+
+    .navbar-toggle{
+        margin: 0px;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-3px);
+
+    }
+
+    #menu-elements-right{
+        display: none;
+    }
+
+    #menu-elements {
+        display: grid;
+        grid-template-columns:auto auto auto;
+
+    }
+
+    #menu-elements li a{
+        border: hidden;
+        border-bottom:1px #B49167 solid  ;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin: 10px;
+    }
+
+    #menu-elements#travel a{
+        padding-top: 30px;
+    }
+
+    #landing{
+        height: 70vh;
+    }
+    #landing-content{
+        top: 40%!important;
+        font-size: 10px;
+    }
+
+
+    #main-heading{
+        margin: 10px;
+    }
+    
+    #searchbar-main{
+        max-width: 300px;
+        height: 30px;
+
+    }
+
+    #down{
+        display: none;
+    }
+
+    #top-btn{
+        transform: scale(0.8) translateX(+50px
+        );
     }
 
 }
