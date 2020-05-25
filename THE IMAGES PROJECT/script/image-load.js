@@ -44,7 +44,7 @@ fetch("https://api.unsplash.com/search/photos?query="+category+"&per_page=30&pag
         var no_image= document.createElement("img");
         var div_tag= document.getElementById("no-image");
 
-        no_image.setAttribute("src","Files/search_no_result.png")
+        no_image.setAttribute("src","Files/no-results.png")
         div_tag.appendChild(no_image);
     }
     
