@@ -638,4 +638,17 @@ form{
         transform: scale(0.8) translateX(+50px);
     }
 
+    #footer-content{
+        max-width: 70vw;
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+    
+    #footer-brand{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
 }
+
