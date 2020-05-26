@@ -233,6 +233,9 @@
     img.image, img.active-image{
         margin-left: 0px;
         margin-right: 0px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
     }
 
     #overlay{
