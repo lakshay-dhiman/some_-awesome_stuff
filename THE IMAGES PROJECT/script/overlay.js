@@ -45,7 +45,12 @@ var elementID2= element.getAttribute("id2")
         var img_count=active_image.getAttribute("count");
         if(img_count==1){
         prev.classList.add("invisible");
-}
+        }
+        else{
+            prev.classList.remove("invisible");
+        }
+
+
     }
 
     else if(elementClass=="overlay-visible"){
